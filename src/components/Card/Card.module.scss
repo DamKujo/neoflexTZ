@@ -1,0 +1,124 @@
+.card {
+    background-color: #fff;
+    border: 1px solid #e6e2e2;
+    padding: 15px;
+    width: 350px;
+    height: 407px;
+    border-radius: 40px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    transition: box-shadow 300ms ease-in-out, transform 300ms ease-in-out;
+  
+    position: relative;
+
+    .plus{
+      cursor: pointer;
+    }
+  
+    &:hover{
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.239);
+      transform: translateY(-5px);
+      border: 1px solid 	#75b8ff;
+    }
+  
+    .favorite {
+      position: absolute;
+      cursor: pointer;
+      top: 15px;
+      left: 10px;
+      width: 38px;
+      height: 38px;
+      padding: 2px;
+      border-radius: 10px;
+      
+
+      &:hover {
+        border: 2px solid 	#FFCE7F;
+      }
+     
+    }
+
+    .image {
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  
+    .cardContent{
+      margin-left: 25px;
+      padding-right: 15px;
+    }
+  
+    h5{
+      font-weight: 400;
+      font-size: 17px;
+      margin: 10px 0;
+    }
+  
+    b{
+      font-size: 14px;
+    }
+
+    .title{
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .price{
+      margin-left: 13px;
+      margin-top: 20px;
+      font-size: 17px;
+      font-weight: 600;
+      color: #FFA542;
+    }
+
+    .lastprice{
+      margin-bottom: 15px;
+      font-size: 13px;
+      color: #FFCE7F;
+      margin-left: 22px;
+      text-decoration: line-through;
+    }
+
+    .btn{
+      width: 120px;
+      height: 25px;
+      border: 2px solid 	#2f84df;
+      border-radius: 10px;
+      background-color: #fff;
+      color: #333;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: .3s ease-in-out;
+      
+      &:disabled{
+        background-color: #ccc !important;
+        cursor: default;
+        
+      }
+
+      &:hover{
+        background-color: 	#429cff;
+      }
+
+      &:active{
+        background: 	#067fff;
+      }
+    }
+
+    .buy{
+      font-size: 17px;
+      font-weight: 600;
+      color: #333;
+      border: 0;
+      background-color: #fff;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: .2s ease-in-out;
+
+      &:hover{
+        color: #ccc;
+      }
+    }
+}

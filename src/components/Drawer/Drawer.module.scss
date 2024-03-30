@@ -1,0 +1,39 @@
+
+.drawer {
+  display: flex;
+  justify-content: space-between;
+  width: 1110px;
+  height: 100%;
+  padding: 30px;
+  
+  .Items{
+    width: 55%;
+  }
+
+  
+    h2{
+      margin: 0;
+      font-size: 24px;
+  
+      
+    }
+}
+
+.sign{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFA542;
+  text-align: center;
+  cursor: pointer;
+}
+.sign img{
+  margin-top: 6px;
+}
+
+.count{
+  border: 0;
+  padding-left: 50px;
+}
+
