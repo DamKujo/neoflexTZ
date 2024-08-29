@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+npm run dev - to start the proj 
+npm run json-server - to start the server 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
