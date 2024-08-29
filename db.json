@@ -135,6 +135,14 @@
       "lastName": "Тигр",
       "firstName": "Роберт",
       "id": 4
+    },
+    {
+      "login": "alinchik-blinchik",
+      "password": "1337228ban",
+      "email": "martishka1337@list.ru",
+      "lastName": "Semidotchenko",
+      "firstName": "Alina",
+      "id": 5
     }
   ]
 }
