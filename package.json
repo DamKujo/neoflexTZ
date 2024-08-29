@@ -24,8 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "json-server": "json-server --watch db.json --port 3001",
-    "dev": "concurrently \"npm start\" \"npm run json-server\"",
-    "build": "concurrently \"npm start\" \"npm run json-server\""
+    "dev": "concurrently \"npm start\" \"npm run json-server\""
   },
   "eslintConfig": {
     "extends": [
