@@ -63,7 +63,7 @@ const renderItemsWireless = ()=>{
             <img
               onClick={() => setSearchValue('')}
               className="clear cu-p"
-              src="./../images/cart/btn-remove.svg"
+              src="./../images/cart/close.svg"
               alt="Clear"
             />
           )}

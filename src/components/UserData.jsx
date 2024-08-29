@@ -9,20 +9,27 @@ function UserData () {
     const [userNow, setUserNow] = React.useState([]);
 
     React.useEffect(() => {
-        const fetchOrders = async () => {
-          try {
-            const { data: usersData } = await axios.get('http://localhost:3001/users');
+      let isMounted = true;
+      const fetchOrders = async () => {
+        try {
+          const { data: usersData } = await axios.get('http://localhost:3001/users');
+          if(isMounted){
             const usersNeed = usersData.find(({login}) => login === userLive);
             setUserNow(usersNeed);
-          } catch (error) {
-            alert("Ошибка, повторите попытку позже");
-            console.log(error);
           }
-        };
-    
-        fetchOrders();
+        } catch (error) {
+          alert("Ошибка, повторите попытку позже");
+          console.log(error);
+        }
+      };
+  
+      fetchOrders();
+
+      return () => {
+        isMounted = false;
+      }
         
-        }, []);
+        }, [userLive]);
     
 
     return(

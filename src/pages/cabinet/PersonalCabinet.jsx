@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import UserData from "../../components/UserData";
 import styles from "./Cabinets.module.scss";
